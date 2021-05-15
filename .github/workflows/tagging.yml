@@ -33,7 +33,7 @@ jobs:
       - name: Pull and push tagged Docker Image
         uses: akhilerm/tag-push-action@v1.0.0
         with:
-          src: ghcr.io/62130500119/bookinfo-ratings:uat
+          src: ghcr.io/62130500119/bookinfo-details:uat
           dst: |
-            ghcr.io/62130500119/bookinfo-ratings:${{needs.git-tag.outputs.tag-version}}
+            ghcr.io/62130500119/bookinfo-details:${{needs.git-tag.outputs.tag-version}}
             
